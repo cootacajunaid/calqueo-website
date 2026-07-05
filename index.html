@@ -172,6 +172,37 @@
     letter-spacing: 1px;
   }
 
+  .principles a.plink {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 1px;
+  }
+  .principles a.plink:hover, .principles a.plink:focus-visible { color: var(--ivory); border-color: var(--ivory); }
+
+  /* ---- privacy ---- */
+  .privacy {
+    border-top: 1px solid var(--key-green);
+    padding: 64px 0;
+  }
+  .privacy h2 {
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--ivory);
+    letter-spacing: 0.25px;
+  }
+  .privacy p {
+    margin-top: 16px;
+    max-width: 54ch;
+  }
+  .privacy .updated {
+    color: var(--dim-sage);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 24px;
+  }
+
   /* ---- support ---- */
   .support {
     border-top: 1px solid var(--key-green);
@@ -255,8 +286,15 @@
   <section class="principles">
     <p><span class="k">No ads.</span> Nothing interrupts.</p>
     <p><span class="k">No account.</span> Nothing to sign up for.</p>
-    <p><span class="k">No tracking.</span> Calqueo collects no data at all.</p>
+    <p><span class="k">No tracking.</span> Calqueo collects no data at all. <a class="plink" href="#privacy">Read the privacy policy</a>.</p>
     <p>Nothing to configure. Just a small, serene instrument that lives on your phone and does one thing gracefully.</p>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <h2>Privacy policy</h2>
+    <p>Calqueo does not collect, store, or transmit any personal data. There are no accounts, no analytics, no third-party services, and no advertising. Everything you type stays on your device.</p>
+    <p>Because Calqueo collects nothing, there is nothing to share, sell, or delete. If this policy ever changes, the update will be published on this page.</p>
+    <p class="updated">Last updated July 2026</p>
   </section>
 
   <section class="support" id="support">
@@ -268,6 +306,7 @@
 
   <footer>
     <span>&copy; 2026 Calqueo</span>
+    <span><a href="#privacy" style="color: inherit;">Privacy</a></span>
     <span>Made for iPhone</span>
   </footer>
 
