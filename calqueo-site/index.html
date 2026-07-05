@@ -147,12 +147,19 @@
     display: flex;
     justify-content: center;
   }
-  .shot img {
-    width: min(340px, 78vw);
+  .phone {
+    background: #070908;
+    padding: 11px;
+    border-radius: 58px;
+    box-shadow:
+      0 0 0 1px #2D3531,
+      0 40px 90px rgba(0, 0, 0, 0.6);
+  }
+  .phone img {
+    width: min(320px, 74vw);
     height: auto;
     display: block;
-    border-radius: 40px;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+    border-radius: 47px;
   }
 
   /* ---- principles ---- */
@@ -229,8 +236,10 @@
 
   <section class="pitch">
     <h1>A calculator designed to be beautiful.</h1>
-    <p>Calqueo does four things — add, subtract, multiply, divide — and does them gracefully. As you type, your expression is spelled out in words: <em>twelve plus seven times three</em>. A quiet sentence that makes you read your math, not just see it.</p>
-    <p>It follows true order of operations, the way mathematics intends. And when you press equals, the answer takes the stage while your expression stays beneath it — in figures and in words.</p>
+    <p>What makes Calqueo unlike any other calculator is language. As you type, your expression is spelled out in words — <em>twelve plus seven times three</em>. Decimals, negatives, and long chains of operations all read naturally, updating live with every key.</p>
+    <p>Calqueo follows true order of operations: multiplication and division resolve before addition and subtraction.</p>
+    <p>The design is a single deep green with one gold accent and a serif made for numbers. Soft haptics on every key.</p>
+
     <div class="store">
       <a href="#" aria-label="Download Calqueo on the App Store">Download on the App&nbsp;Store</a>
       <small>FOR iPHONE &middot; FREE</small>
@@ -238,19 +247,23 @@
   </section>
 
   <section class="shot">
-    <img src="assets/screenshot.png" alt="Calqueo on iPhone: a deep green calculator with gold operator keys, showing an expression spelled out in words above a large serif result">
+    <div class="phone">
+      <img src="assets/screenshot.png" alt="Calqueo on iPhone: a deep green calculator with gold operator keys, showing an expression spelled out in words above a large serif result">
+    </div>
   </section>
 
   <section class="principles">
     <p><span class="k">No ads.</span> Nothing interrupts.</p>
     <p><span class="k">No account.</span> Nothing to sign up for.</p>
     <p><span class="k">No tracking.</span> Calqueo collects no data at all.</p>
+    <p>Nothing to configure. Just a small, serene instrument that lives on your phone and does one thing gracefully.</p>
   </section>
 
   <section class="support" id="support">
     <h2>Support</h2>
     <p>Found something that isn't working, or have an idea for Calqueo? Write to us — a person reads every message.</p>
-    <a class="mail" href="mailto:support@example.com?subject=Calqueo%20support">support@example.com</a>
+    <a class="mail" href="mailto:calqueosupport@gmail.com?subject=Calqueo%20support">calqueosupport@gmail.com
+</a>
   </section>
 
   <footer>
